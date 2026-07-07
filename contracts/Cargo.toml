@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+  "shared_types",
+  "pool_contract",
+  "reputation_contract",
+]
+
+[workspace.dependencies]
+soroban-sdk = "25"
+shared_types = { path = "shared_types" }
+reputation_contract = { path = "reputation_contract" }
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
+
+# For more information about this profile see https://soroban.stellar.org/docs/basic-tutorials/logging#cargotoml-profile
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true
