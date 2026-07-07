@@ -4,6 +4,10 @@
 
 Vendors pool small, fixed contributions on a fixed schedule; each cycle, one member draws the full pot. Every contribution, draw, and reputation event is recorded on-chain — transparent, tamper-proof, and enforced by smart contracts instead of trust in a single collector.
 
+[![CI](https://github.com/caramel-123/marketpool/actions/workflows/ci.yml/badge.svg)](https://github.com/caramel-123/marketpool/actions/workflows/ci.yml)
+
+**Repo:** https://github.com/caramel-123/marketpool
+
 ## Table of Contents
 
 - [Problem](#problem)
@@ -162,7 +166,7 @@ GitHub Actions runs on every push/PR: `cargo test --workspace` for both contract
 
 **CI/CD pipeline:**
 
-<!-- TODO: add a screenshot of the GitHub Actions run once this repo is pushed -- see the Actions tab -->
+![GitHub Actions CI passing](docs/screenshots/ci-pipeline.png)
 
 ## Demo Video
 
