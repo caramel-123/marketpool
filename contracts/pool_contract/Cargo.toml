@@ -1,0 +1,23 @@
+[package]
+name = "pool_contract"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+shared_types = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
+# Dev-only: lets integration tests register a real reputation_contract instance
+# in-process and exercise the pool_contract <-> reputation_contract wiring.
+# Production pool_contract code never depends on this crate directly -- it
+# calls reputation_contract dynamically via env.invoke_contract() so the two
+# contracts stay independently-deployed Wasm binaries with no build-time
+# coupling outside of tests.
+reputation_contract = { workspace = true }
