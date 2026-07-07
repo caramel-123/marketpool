@@ -1,0 +1,18 @@
+{
+  "network": "testnet",
+  "networkPassphrase": "Test SDF Network ; September 2015",
+  "rpcUrl": "https://soroban-testnet.stellar.org",
+  "deployerPublicKey": "GAQ2SOW2URO3Y5JJPQS5GRI7MXREUEYZZXOVH5CHDC7KRIAOAQWFCUQ3",
+  "deployerKeyAlias": "marketpool-deployer",
+  "nativeAssetContractId": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC",
+  "contracts": {
+    "poolContract": "CBOURHM2D4E3BIQM57W35HYRGVXZHS5A36KZLKSAMVV2NO7AGWHPDCOK",
+    "reputationContract": "CDGWOE3IE35VDIE43STXBV5332AZJLDR3XUPPRVFI77EGYPJT7CBG4WN"
+  },
+  "wiring": {
+    "reputationContractInitializedWithAdmin": "GAQ2SOW2URO3Y5JJPQS5GRI7MXREUEYZZXOVH5CHDC7KRIAOAQWFCUQ3",
+    "poolContractAuthorizedOnReputationContract": true,
+    "poolContractInitializedWithReputationContract": true
+  },
+  "notes": "poolContract was redeployed on 2026-07-04 to add get_member_by_position/get_all_members read views discovered as missing during frontend work (CCLBRALD... was the earlier deploy, now superseded and unused). The old smoke-test pool at that address is abandoned; no seed demo pools existed there yet."
+}
