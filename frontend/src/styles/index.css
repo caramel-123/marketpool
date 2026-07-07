@@ -1,0 +1,10 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+@layer base {
+  button,
+  a[role="button"] {
+    min-height: 44px;
+  }
+}
