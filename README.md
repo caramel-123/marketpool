@@ -35,7 +35,7 @@ Wet market vendors in the Philippines commonly run informal "paluwagan" — a ro
 
 ## Live Demo
 
-- **App:** https://marketpool-frontend-foks4b4er-caramel-123s-projects.vercel.app
+- **App:** https://marketpool-frontend.vercel.app
 - **Network:** Stellar Testnet (use [Freighter](https://www.freighter.app/) set to Testnet, funded via [friendbot](https://friendbot.stellar.org))
 
 ## Smart Contracts
@@ -148,7 +148,21 @@ GitHub Actions runs on every push/PR: `cargo test --workspace` for both contract
 
 ## Screenshots
 
-<!-- TODO: add screenshots showing (1) mobile responsive UI, (2) the GitHub Actions CI run, (3) the `cargo test` output -->
+**Mobile responsive UI:**
+
+<img src="docs/screenshots/mobile-landing.png" width="360" alt="Market Pool on mobile" />
+
+**Desktop, showing live platform stats pulled from Supabase + on-chain reads:**
+
+![Market Pool desktop](docs/screenshots/desktop-landing.png)
+
+**Contract test run (33/33 passing):**
+
+![cargo test output](docs/screenshots/cargo-test-output.png)
+
+**CI/CD pipeline:**
+
+<!-- TODO: add a screenshot of the GitHub Actions run once this repo is pushed -- see the Actions tab -->
 
 ## Demo Video
 
