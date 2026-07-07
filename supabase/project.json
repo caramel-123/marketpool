@@ -1,0 +1,12 @@
+{
+  "projectId": "zywmisbxchjnmqlxkmhd",
+  "projectRef": "zywmisbxchjnmqlxkmhd",
+  "organization": "ukeblryqviewswoutmpe (caramel-123's Org)",
+  "url": "https://zywmisbxchjnmqlxkmhd.supabase.co",
+  "region": "ap-southeast-1",
+  "anonPublishableKey": "sb_publishable_OUSlQ4D432A4ITtbA8iy7w_D4PG9T8P",
+  "edgeFunctions": {
+    "stellar-login": "https://zywmisbxchjnmqlxkmhd.supabase.co/functions/v1/stellar-login"
+  },
+  "notes": "anonPublishableKey is safe for VITE_SUPABASE_ANON_KEY (browser-exposed). Never put the service_role key in frontend/.env."
+}
